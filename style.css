@@ -33,7 +33,9 @@ h1 {
 a {
     text-decoration: none;
     color: #FFFFFF;
+    text-align: center;
 }
+
 
 
 
@@ -77,4 +79,497 @@ a {
     height: 533px;
     padding-top: 63px;
 
+}
+
+/* Transfer area styles */
+.Transfer-blogs {
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+}
+
+
+.Transfer-blogs .sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    width: 400px;
+    background: #000;
+    padding: 30px;
+    border-radius: 5px;
+    height: min-content;
+
+}
+
+.Transfer-blogs .sidebar .link {
+
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.Transfer-blogs .transfers-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.Transfer-blogs .transfers-news .transfer {
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.Transfer-blogs .transfers-news .transfer-image img {
+    width: 100%;
+}
+
+.Transfer-blogs .transfers-news .transfer-details {
+    display: block;
+    width: 100%;
+
+}
+
+.Transfer-blogs .transfers-news .transfer-details .transfer-button {
+    border: 1px solid #000;
+    margin: 10px 20px 10px 20px;
+    background-color: #FFFFFF;
+}
+
+.Transfer-blogs .transfers-news .transfer-details .transfer-title {
+    margin: 0px 20px 10px 20px;
+    font-size: 14px;
+}
+
+.Transfer-blogs .transfers-news .transfer-details .time-comment {
+    margin: 20px;
+}
+
+.Transfer-blogs .transfers-news .transfer-details .extra {
+    margin-left: 20px;
+}
+
+.view {
+    width: 95%;
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view button {
+    background: #DD0000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    border: #FFFFFF;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+    background: #000;
+    color: rgb(252, 252, 252);
+    padding-top: 30px;
+    padding-bottom: 15px;
+    animation-name: footer-animation;
+    animation-duration: 4s;
+
+}
+
+
+
+.footer-title {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .contact {
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.footer .contact a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+.footer .social-media {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.footer .social-media a {
+    color: #fff;
+    margin-right: 45px;
+    font-size: 30px;
+}
+
+.footer .copyright p {
+    margin-bottom: 0;
+    color: aquamarine;
+}
+
+/*Match css start*/
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.match {
+    display: inline-block;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.match .flags,
+.country,
+.time-date {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.time-date p {
+    margin-right: 10px;
+}
+
+/* media querey start */
+
+/* tablet responsive start */
+@media only screen and (min-width:688px)and (max-width:992px) {
+
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .container {
+        width: 90%;
+        height: 90%;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .banner-content {
+        color: #FFFFFF;
+
+    }
+
+    .button {
+        color: #FFFFFF;
+        background-color: #DD0000;
+        border-radius: 5px;
+        padding: 10px 15px;
+    }
+
+
+    .fa-angle-right {
+        color: #FFFFFF;
+        font-size: 15px;
+        padding-left: 3px;
+    }
+
+    .banner-image img {
+        width: 80%;
+        height: 85%;
+        margin-top: 6px;
+    }
+
+    .Transfer-blogs {
+        display: block;
+        width: 95%;
+    }
+
+    .Transfer-blogs .sidebar {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+    }
+
+    .Transfer-blogs .transfers-news {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 10px;
+    }
+
+    .Transfer-blogs .sidebar .link {
+        width: 200px;
+        height: 50px;
+        background: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 10px;
+        color: #000;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .view {
+        display: block;
+    }
+
+    .footer .contact {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .vs {
+        font-size: 20px;
+    }
+
+    .animation {
+        display: none;
+    }
+
+}
+
+/* mobile responsive start */
+
+@media only screen and (max-width: 687px) {
+
+
+
+
+    .container {
+        width: 90%;
+        height: 90%;
+
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-right: 70px;
+        text-align: center;
+
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .banner-content {
+        color: #FFFFFF;
+
+    }
+
+    .banner-descriptopn {
+        text-align: center;
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .button {
+        color: #FFFFFF;
+        background-color: #DD0000;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-left: 50px;
+    }
+
+    .fa-angle-right {
+        color: #FFFFFF;
+        font-size: 15px;
+        padding-left: 3px;
+    }
+
+    .banner-image img {
+        width: 70%;
+        height: 75%;
+        margin-left: 60px;
+    }
+
+    .Transfer-blogs {
+        display: block;
+        width: 100%;
+    }
+
+    .Transfer-blogs .sidebar {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        flex-direction: row;
+        display: block;
+        background-color: #FFFFFF;
+    }
+
+    .Transfer-blogs .transfers-news {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 10px;
+    }
+
+    .Transfer-blogs .sidebar .link {
+        width: 300px;
+        border: 1px solid rgb(87, 83, 83);
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        flex-direction: row;
+        display: block;
+        background-color: #FFFFFF;
+
+    }
+
+
+    .view {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+
+    }
+
+    .footer-title {
+        margin-left: 60px;
+        font-size: 50px;
+    }
+
+    .footer .contact {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        font-size: 20px;
+
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .animation {
+        display: none;
+    }
+
+}
+
+a.link.active {
+    background-color: #DD0000 !important;
+    color: white !important;
+}
+
+
+
+/* some animation */
+
+@keyframes footer-animation {
+    from {
+        background-color: #000;
+    }
+
+    to {
+        background-color: rgb(121, 121, 63);
+    }
+}
+
+.animation-1 {
+    display: flex;
+    justify-content: start;
+}
+
+.animation-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.try {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
 }
